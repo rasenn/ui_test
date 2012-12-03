@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  entry_id: 1
+  entry_type: MyString
+  entry_name: MyString
+  entry: MyString
+  entry_text: MyText
+  task_id_num: 1
+  task_id: 1
+
+two:
+  entry_id: 1
+  entry_type: MyString
+  entry_name: MyString
+  entry: MyString
+  entry_text: MyText
+  task_id_num: 1
+  task_id: 1

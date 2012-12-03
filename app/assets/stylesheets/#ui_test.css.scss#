@@ -1,0 +1,31 @@
+// Place all the styles related to the ui_test controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#message {
+   width:100%;
+   border:2px;
+   border-color:#333333;
+   border-style:solid;
+   
+}
+
+#output {
+   float:left;
+   width:49%;
+   border:2px;
+   border-color:#333333;
+   border-style:solid;
+}
+
+#input {
+  float:right;
+  width:49%;
+  border:2px;
+  border-color:#333333;
+  border-style:solid;
+}
+
+

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  caption_id: 1
+  caption_id_num: 1
+  caption_type: MyString
+  caption_context: MyText
+  entry_id: 1
+
+two:
+  caption_id: 1
+  caption_id_num: 1
+  caption_type: MyString
+  caption_context: MyText
+  entry_id: 1

@@ -1,0 +1,19 @@
+
+function change_div(vals){
+  var url = '<%= url_for :controller => :ui_test , :action => :ui_change %>';
+  url = url + '?' + vals;
+  $('#input').load(url);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

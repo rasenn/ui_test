@@ -1,0 +1,30 @@
+<%= javascript_include_tag "/ui_test/type1.js" %>
+
+<h1>テスト画面</h1>
+
+<div id="menu">
+  <%= @menu.display%>
+</div>
+<br />
+<div id="forms">
+<h2>入力フィールド</h2>
+<% @forms.each do |fo| %>
+<%=- label_tag fo.name, fo.name  -%>
+<%=- text_field_tag fo.name , :value => "" , :onfocus => "change_infos('page_id="+f@page_id.to_s+",'))"%> 
+<% end %>
+
+<%#= form_tag nil , :remote => true ,  :id => 'input_form' do  %>
+  <%#= label_tag :last_name, '名' %>
+  <%#= text_field_tag :name ,nil ,  :onfocus => "change_div('par=last_name')" %>
+<br><br>
+  <#%= label_tag :family_name , '姓' %>
+  <#%= text_field_tag :tntu  , nil , :onfocus=> "change_div('par=family_name')" %>
+<% end %>
+</div>
+
+<div id="" >
+  <h2>出力フィールド</h2>
+</div>
+
+
+

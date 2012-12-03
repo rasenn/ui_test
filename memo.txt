@@ -1,0 +1,15 @@
+onfocusで~~.js.erbを呼び出す
+
+~~.js.erbは読み込み時に生成され、中身を動的に変えることはできない。
+
+そのため、~~.js.erbでは、$('#id').load(url)を使う
+
+url生成に、document.activeElement.idなどで、対象のidを取得して、
+load(url+document.activeElement.id)とすれば、
+urlの最後に引数を追加することができる。
+
+かなりスマートじゃないやり方。
+そもそも~~.js.erbじゃなくて、~~.jsでもいだろうと。思われるが。。。
+
+
+
