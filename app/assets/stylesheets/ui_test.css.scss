@@ -4,14 +4,14 @@
 
 
 
-#message {
+#menu {
    width:100%;
    border:2px;
    border-color:#333333;
    border-style:solid;
 }
 
-#output {
+#forms {
    float:left;
    width:49%;
    border:2px;
@@ -19,7 +19,7 @@
    border-style:solid;
 }
 
-#input {
+#infos {
   float:right;
   width:49%;
   border:2px;
@@ -27,4 +27,10 @@
   border-style:solid;
 }
 
+#footer {
+   width:100%;
+   border:2px;
+   border-color:#333333;
+   border-style:solid;
+}
 

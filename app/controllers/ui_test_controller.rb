@@ -13,6 +13,7 @@ class UiTestController < ApplicationController
 
   # ページ表示用
   def page
+#    params[:page_id] ||= 1
     @menu = Menu.fetch_menu(params)
     @forms = Form.fetch_forms(params)
     @page_id = params[:page_id] || 0

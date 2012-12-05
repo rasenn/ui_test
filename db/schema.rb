@@ -13,23 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20121201152841) do
 
-  create_table "captions", :force => true do |t|
-    t.integer  "caption_id"
-    t.integer  "caption_id_num"
-    t.string   "caption_type"
-    t.text     "caption_context"
-    t.integer  "entry_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
-  create_table "case_types", :force => true do |t|
-    t.integer  "case_type_id"
-    t.string   "case_type_name"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "cases", :force => true do |t|
     t.integer  "page_id"
     t.integer  "form_no"
@@ -38,22 +21,10 @@ ActiveRecord::Schema.define(:version => 20121201152841) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "entries", :force => true do |t|
-    t.integer  "entry_id"
-    t.string   "entry_type"
-    t.string   "entry_name"
-    t.string   "entry"
-    t.text     "entry_text"
-    t.integer  "task_id_num"
-    t.integer  "task_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "forms", :force => true do |t|
     t.integer  "page_id"
     t.integer  "form_no"
-    t.string   "type"
+    t.string   "form_type"
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -64,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20121201152841) do
     t.integer  "form_no"
     t.integer  "info_no"
     t.string   "name"
-    t.string   "type"
+    t.string   "info_type"
     t.text     "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

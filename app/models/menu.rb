@@ -4,7 +4,7 @@ class Menu < ActiveRecord::Base
 
   def self.fetch_menu(params)
     if params[:page_id]
-      Menu.where(:page_id => params[:page_id]).first
+      return Menu.where(:page_id => params[:page_id]).first
     else
       # TODO: どうしましょ
       return nil

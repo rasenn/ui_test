@@ -5,8 +5,10 @@ UiTest::Application.routes.draw do
 
   get "case/input"
 
-  get "ui_test/type1"
-  get "ui_test/ui_change"
+#  get "ui_test/type1"
+#  get "ui_test/ui_change"
+  get "ui_test/page"
+  get "ui_test/info_pane"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

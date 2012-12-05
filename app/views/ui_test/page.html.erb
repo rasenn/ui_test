@@ -1,28 +1,30 @@
-<%= javascript_include_tag "/ui_test/type1.js" %>
+<%#= javascript_include_tag :default %>
+<%= javascript_include_tag "/ui_test/page.js" %>
 
 <h1>テスト画面</h1>
 
 <div id="menu">
-  <%= @menu.display%>
+  <%= @menu.display %>
 </div>
 <br />
 <div id="forms">
-<h2>入力フィールド</h2>
+<h2>フォームフィールド</h2>
 <% @forms.each do |fo| %>
-<%=- label_tag fo.name, fo.name  -%>
-<%=- text_field_tag fo.name , :value => "" , :onfocus => "change_infos('page_id="+f@page_id.to_s+",'))"%> 
+<%= label_tag fo.name, fo.name -%>
+<%= text_field_tag fo.name , nil , :onfocus => "change_infos(['page_id="+@page_id.to_s+"','form_no="+fo.form_no.to_s+"'])" -%>
+<BR /><BR />
 <% end %>
 
 <%#= form_tag nil , :remote => true ,  :id => 'input_form' do  %>
   <%#= label_tag :last_name, '名' %>
   <%#= text_field_tag :name ,nil ,  :onfocus => "change_div('par=last_name')" %>
 <br><br>
-  <#%= label_tag :family_name , '姓' %>
-  <#%= text_field_tag :tntu  , nil , :onfocus=> "change_div('par=family_name')" %>
-<% end %>
+  <%#= label_tag :family_name , '姓' %>
+  <%#= text_field_tag :tntu  , nil , :onfocus=> "change_div('par=family_name')" %>
+<%# end %>
 </div>
 
-<div id="" >
+<div id="infos" >
   <h2>出力フィールド</h2>
 </div>
 

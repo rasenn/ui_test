@@ -5,7 +5,7 @@ class CreateInfos < ActiveRecord::Migration
       t.integer :form_no
       t.integer :info_no
       t.string :name
-      t.string :type
+      t.string :info_type
       t.text :value
 
       t.timestamps
